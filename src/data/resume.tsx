@@ -113,7 +113,7 @@ export const DATA = {
       ],
       image: "",
       video:
-        "https://github.com/diogogomesaraujo/portfolio/blob/main/public/mooddiary.mp4",
+        "./mooddiary.mp4",
     },
     {
       title: "Magic UI",
