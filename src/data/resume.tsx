@@ -5,7 +5,7 @@ export const DATA = {
   name: "Diogo Araújo",
   initials: "DA",
   url: "https://dillion.io",
-  location: "San Francisco, CA",
+  location: "Covilhã/Braga, Portugal",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description:
     "Computer Science Student and Back-End Engineer at STAR JE.",
@@ -15,13 +15,13 @@ export const DATA = {
   skills: [
     "Java",
     "C",
-    "Node.Js",
-    "JavaScript",
     "Python",
-    "Git",
-    "SQL",
+    "NodeJS",
+    "JavaScript",
+    "Git/GitHub",
+    "PostgreSQL",
     "MongoDB",
-    "Calculus"
+    "Docker"
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -73,7 +73,7 @@ export const DATA = {
       href: "https://degema.pt/",
       location: "Remote",
       title: "Restaurant Server",
-      logoUrl: "/degema.png",
+      logoUrl: "/degema.jpg",
       start: "July 2023",
       end: "September 2023",
       description:
