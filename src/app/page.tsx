@@ -102,13 +102,13 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
-          <div className="flex flex-wrap gap-1">
-            {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
-              </BlurFade>
-            ))}
-          </div>
+          <BlurFade delay={BLUR_FADE_DELAY * 10}>
+            <img 
+              src="https://go-skill-icons.vercel.app/api/icons?i=c,java,cpp,rust,python,ocaml,postgresql,docker"
+              className="h-12 w-auto object-contain"
+              alt="Programming Skills"
+            />
+          </BlurFade>
         </div>
       </section>
       <section id="projects">
@@ -123,9 +123,7 @@ export default function Page() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
-                  favorites.
+                  I have worked on many projects from simple CLI tools to complex deployable applications. Here are the projects I enjoyed working on the most!
                 </p>
               </div>
             </div>
@@ -144,7 +142,6 @@ export default function Page() {
                   dates={project.dates}
                   tags={project.technologies}
                   image={project.image}
-                  video={project.video}
                   links={project.links}
                 />
               </BlurFade>
@@ -161,17 +158,10 @@ export default function Page() {
                   Hackathons
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  I like building things
+                  Some certifications
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I attended{" "}
-                  {DATA.hackathons.length}+ hackathons. People from around the
-                  country would come together and build incredible things in 2-3
-                  days. It was eye-opening to see the endless possibilities
-                  brought to life by a group of motivated and passionate
-                  individuals.
-                </p>
-              </div>
+                  I believe that certifications and extracurricular activities are great ways to enhance my skills and demonstrate my commitment to continuous learning and professional development.                </p>              </div>
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
@@ -206,9 +196,7 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                Want to chat? Feel free to reach out and I'll get back to you as soon as possible.
               </p>
             </div>
           </BlurFade>
