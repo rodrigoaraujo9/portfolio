@@ -42,6 +42,20 @@ Built with next.js, [shadcn/ui](https://ui.shadcn.com/), and [magic ui](https://
 
 5. Open the [Config file](./src/data/resume.tsx) and make changes
 
+# Docker Deployment
+
+1. Build the Docker image:
+   ```bash
+   docker build --platform linux/amd64 -t portfolio:latest .
+   ```
+
+2. Run the container:
+   ```bash
+   docker run -p 3000:3000 portfolio:latest
+   ```
+
+The application will be available at http://localhost:3000
+
 # License
 
 Licensed under the [MIT license](https://github.com/dillionverma/portfolio/blob/main/LICENSE.md).
