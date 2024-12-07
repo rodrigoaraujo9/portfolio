@@ -8,6 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
+import Image from 'next/image'
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -98,19 +99,22 @@ export default function Page() {
         </div>
       </section>
       <section id="skills">
-        <div className="flex min-h-0 flex-col gap-y-3">
-          <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className="text-xl font-bold">Skills</h2>
-          </BlurFade>
-          <BlurFade delay={BLUR_FADE_DELAY * 10}>
-            <img 
-              src="https://go-skill-icons.vercel.app/api/icons?i=c,java,cpp,rust,python,ocaml,postgresql,docker"
-              className="h-12 w-auto object-contain"
-              alt="Programming Skills"
-            />
-          </BlurFade>
-        </div>
-      </section>
+  <div className="flex min-h-0 flex-col gap-y-3">
+    <BlurFade delay={BLUR_FADE_DELAY * 9}>
+      <h2 className="text-xl font-bold">Skills</h2>
+    </BlurFade>
+    <BlurFade delay={BLUR_FADE_DELAY * 10}>
+      <Image 
+        src={DATA.skillsImage} // Use the dynamic property
+        alt="Programming Skills"
+        width={192}
+        height={48}
+        className="h-12 w-auto object-contain"
+      />
+    </BlurFade>
+  </div>
+</section>
+
       <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
@@ -155,11 +159,11 @@ export default function Page() {
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                  Hackathons
+                  Certifications
                 </div>
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                  Some certifications
-                </h2>
+                  My Achievements                
+                  </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                   I believe that certifications and extracurricular activities are great ways to enhance my skills and demonstrate my commitment to continuous learning and professional development.                </p>              </div>
             </div>
@@ -177,7 +181,6 @@ export default function Page() {
                     location={project.location}
                     dates={project.dates}
                     image={project.image}
-                    links={project.links}
                   />
                 </BlurFade>
               ))}

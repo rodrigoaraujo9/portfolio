@@ -12,9 +12,7 @@ export const DATA = {
   summary:
   "Hi, I'm Diogo Gomes de Araújo, a third-year Computer Science student at Universidade da Beira Interior. From an early age, my fascination with technology led me to build simple games and websites, fueling my passion for programming and shaping my career path.\n\nIn addition to my technical pursuits, I have a strong interest in design and photography, which gives me the chance to blend creativity with technology. I'm always seeking to expand my skills and knowledge, whether through internships, collaborative projects, or new challenges. My aim is not only to grow as a software engineer but also to contribute to projects that have a lasting impact.",
   avatarUrl: "/me1.png",
-  skills: [
-    "C",
-  ],
+  skillsImage: "/icons.svg",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
   ],
@@ -36,9 +34,9 @@ export const DATA = {
 
         navbar: true,
       },
-      email: {
+      Email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:diogo@araujo.pro",
         icon: Icons.email,
 
         navbar: true,
@@ -95,13 +93,8 @@ export const DATA = {
       ],
       links: [
         {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
           type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
+          href: "https://github.com/diogogomesaraujo/rust-shell",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -139,11 +132,6 @@ export const DATA = {
         image:
         "images.png",
       links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/justinmichaud/TerribleHacks2016-Windows11",
-        },
       ],
     },
     {
@@ -154,13 +142,6 @@ export const DATA = {
         "Gained comprehensive knowledge of Agile principles and Scrum framework, including sprint planning, daily standups, and retrospectives. Learned to effectively collaborate in cross-functional teams and manage product backlogs.",
       image:
         "logo-certiprof.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/UWPortalSDK/crowmark",
-        },
-      ],
     },
     {
       title: "Robocup 2016 - Leipzig, Germany, Certificate of Participation",
@@ -170,13 +151,6 @@ export const DATA = {
         "Participating in RoboCup was a transformative childhood experience that ignited my enduring passion for technology and programming.",
       image:
         "robocup.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/UWPortalSDK/crowmark",
-        },
-      ],
     },
   ],
 } as const;
