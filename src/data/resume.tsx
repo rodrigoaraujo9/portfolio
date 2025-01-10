@@ -101,12 +101,31 @@ export const DATA = {
       image: "/shell2.png",
     },
     {
-      title: "Star Wars Inspired OpenGL Scene",
-      href: "https://github.com/diogogomesaraujo/opengl-starwars-scene",
-      dates: "December 2024",
+      title: "OCaml Game",
+      href: "https://github.com/diogogomesaraujo/ocaml-game",
+      dates: "January 2024",
       active: true,
       description:
-        "A simple scene to learn object loading, lighting, skybox's and movement in OpenGL for Computer Graphics class.",
+        "A simple Mr. Robot themed game made with Raylib in OCaml. Inspired by TJ Devries.",
+      technologies: [
+        "OCaml", "Raylib"
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/diogogomesaraujo/ocaml-game",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/demo.gif",
+    },
+    {
+      title: "Space Invaders 3D",
+      href: "https://github.com/diogogomesaraujo/space-invaders-3d",
+      dates: "January 2025",
+      active: true,
+      description:
+        "A simple Space Invaders replica made with C++ and OpenGL for Computer Graphics class.",
       technologies: [
         "C++",
         "OpenGL",
@@ -119,7 +138,26 @@ export const DATA = {
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/1.png",
+      image: "/space-invaders.gif",
+    },
+    {
+      title: "Arythmetic Interpreter",
+      href: "https://github.com/diogogomesaraujo/aryth-ml-tic",
+      dates: "January 2025",
+      active: true,
+      description:
+        "A lightweight OCaml lexer and interpreter for arythmetic functions to consolidate what was learnt in Theory of Computation class.",
+      technologies: [
+        "OCaml","Menhir"
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/diogogomesaraujo/aryth-ml-tic",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/interpreter.png",
     },
   ],
   hackathons: [
