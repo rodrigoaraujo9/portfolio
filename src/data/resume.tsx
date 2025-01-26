@@ -17,7 +17,7 @@ export const DATA = {
     { href: "/", icon: HomeIcon, label: "Home" },
   ],
   contact: {
-    email: "diogo@araujo.pro",
+    email: "contact@diogoaraujo.com",
     tel: "+351 914576371",
     social: {
       GitHub: {
@@ -36,7 +36,7 @@ export const DATA = {
       },
       Email: {
         name: "Send Email",
-        url: "mailto:diogo@araujo.pro",
+        url: "mailto:contact@diogoaraujo.pro",
         icon: Icons.email,
 
         navbar: true,
@@ -50,12 +50,12 @@ export const DATA = {
       href: "https://starje.pt/",
       badges: [],
       location: "Remote",
-      title: "Back-End Engineer",
+      title: "Back-End Engineer and Project Manager",
       logoUrl: "/starje.png",
       start: "May 2024",
       end: "Now",
       description:
-        "As a backend engineer at Star JE, I built scalable and efficient solutions using Node.js and TypeScript, enhancing performance.",
+        "As a backend engineer at Star JE, I built scalable and efficient solutions using Node.js and TypeScript, enhancing performance. I was also a recruter and managed different projects with multiple people.",
     },
     {
       company: "Degema",
@@ -117,28 +117,27 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/demo.gif",
+      image: "/elliot.gif",
     },
     {
-      title: "Space Invaders 3D",
-      href: "https://github.com/diogogomesaraujo/space-invaders-3d",
+      title: "Text Editor",
+      href: "https://github.com/diogogomesaraujo/funk-txt",
       dates: "January 2025",
       active: true,
       description:
-        "A simple Space Invaders replica made with C++ and OpenGL for Computer Graphics class.",
+        "A fluid text editor written in C to learn more about systems programming threads and memory managment.",
       technologies: [
-        "C++",
-        "OpenGL",
-        "Assimp", 
+        "C",
+        "Raylib",
       ],
       links: [
         {
           type: "Source",
-          href: "https://github.com/diogogomesaraujo/opengl-starwars-scene",
+          href: "https://github.com/diogogomesaraujo/funk-txt",
           icon: <Icons.globe className="size-3" />,
         },
       ],
-      image: "/space-invaders.gif",
+      image: "/funk.gif",
     },
     {
       title: "Arythmetic Interpreter",
