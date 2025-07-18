@@ -118,23 +118,6 @@ export const DATA = {
       image: "/funk.gif",
     },
     {
-      title: "OCaml Game",
-      href: "https://github.com/diogogomesaraujo/ocaml-game",
-      dates: "January 2024",
-      active: true,
-      description:
-        "A simple Mr. Robot themed game made with Raylib in OCaml. Inspired by TJ Devries.",
-      technologies: ["OCaml", "Raylib"],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/diogogomesaraujo/ocaml-game",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/elliot.gif",
-    },
-    {
       title: "Arythmetic Interpreter",
       href: "https://github.com/diogogomesaraujo/aryth-ml-tic",
       dates: "January 2025",
@@ -150,6 +133,23 @@ export const DATA = {
         },
       ],
       image: "/interpreter.png",
+    },
+    {
+      title: "OCaml Game",
+      href: "https://github.com/diogogomesaraujo/ocaml-game",
+      dates: "January 2024",
+      active: true,
+      description:
+        "A simple Mr. Robot themed game made with Raylib in OCaml. Inspired by TJ Devries.",
+      technologies: ["OCaml", "Raylib"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/diogogomesaraujo/ocaml-game",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/elliot.gif",
     },
   ],
   hackathons: [
