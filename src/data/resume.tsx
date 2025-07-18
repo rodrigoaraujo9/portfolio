@@ -7,15 +7,12 @@ export const DATA = {
   url: "https://dillion.io",
   location: "Covilhã/Braga, Portugal",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
-  description:
-    "Computer Science Student and Back-End Engineer at STAR JE.",
+  description: "Computer Science Student at Universidade da Beira Interior.",
   summary:
-  "Hi, I'm Diogo Gomes de Araújo, a third-year Computer Science student at Universidade da Beira Interior. From an early age, my fascination with technology led me to build simple games and websites, fueling my passion for programming and shaping my career path.\n\nIn addition to my technical pursuits, I have a strong interest in design and photography, which gives me the chance to blend creativity with technology. I'm always seeking to expand my skills and knowledge, whether through internships, collaborative projects, or new challenges. My aim is not only to grow as a software engineer but also to contribute to projects that have a lasting impact.",
+    "Hi, I'm Diogo Gomes de Araújo, a third-year Computer Science student at Universidade da Beira Interior. From an early age, my fascination with technology led me to build simple games, websites and applications, fueling my passion for programming and shaping my career path.\n\nI'm always seeking to expand my skills and knowledge, whether through internships, projects, or new challenges. My aim is not only to grow as a software engineer but also to contribute to work that has a lasting impact.",
   avatarUrl: "/me1.png",
   skillsImage: "/icons.svg",
-  navbar: [
-    { href: "/", icon: HomeIcon, label: "Home" },
-  ],
+  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     email: "contact@diogoaraujo.com",
     tel: "+351 914576371",
@@ -53,7 +50,7 @@ export const DATA = {
       title: "Back-End Engineer and Project Manager",
       logoUrl: "/starje.png",
       start: "May 2024",
-      end: "Now",
+      end: "July 2025",
       description:
         "As a backend engineer at Star JE, I built scalable and efficient solutions using Node.js and TypeScript, enhancing performance. I was also a recruter and managed different projects with multiple people.",
     },
@@ -82,23 +79,43 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Shell",
-      href: "https://github.com/diogogomesaraujo/rust-shell",
-      dates: "December 2024",
+      title: "Group Wallet for Nano",
+      href: "https://github.com/diogogomesaraujo/aokiji",
+      dates: "Feb 2025 - July 2025",
       active: true,
       description:
-        "A basic shell written in Rust to learn Systems Programming and the differences between C and Rust.",
-      technologies: [
-        "Rust",
-      ],
+        "A Rust library and wallet for Nano group transactions using FROST as the final project of my CS degree at Universidade da Beira Interior.",
+      technologies: ["Rust", "Tokio", "Dioxus", "Dalek"],
       links: [
         {
-          type: "Source",
-          href: "https://github.com/diogogomesaraujo/rust-shell",
+          type: "Wallet",
+          href: "https://github.com/diogogomesaraujo/aokiji",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Library",
+          href: "https://github.com/diogogomesaraujo/frost-sig",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/shell2.png",
+      image: "/wallet.gif",
+    },
+    {
+      title: "Text Editor",
+      href: "https://github.com/diogogomesaraujo/funk-txt",
+      dates: "January 2025",
+      active: true,
+      description:
+        "A fluid text editor written in C to learn more about systems programming threads and memory managment.",
+      technologies: ["C", "Raylib"],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/diogogomesaraujo/funk-txt",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/funk.gif",
     },
     {
       title: "OCaml Game",
@@ -107,9 +124,7 @@ export const DATA = {
       active: true,
       description:
         "A simple Mr. Robot themed game made with Raylib in OCaml. Inspired by TJ Devries.",
-      technologies: [
-        "OCaml", "Raylib"
-      ],
+      technologies: ["OCaml", "Raylib"],
       links: [
         {
           type: "Source",
@@ -120,35 +135,13 @@ export const DATA = {
       image: "/elliot.gif",
     },
     {
-      title: "Text Editor",
-      href: "https://github.com/diogogomesaraujo/funk-txt",
-      dates: "January 2025",
-      active: true,
-      description:
-        "A fluid text editor written in C to learn more about systems programming threads and memory managment.",
-      technologies: [
-        "C",
-        "Raylib",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/diogogomesaraujo/funk-txt",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "/funk.gif",
-    },
-    {
       title: "Arythmetic Interpreter",
       href: "https://github.com/diogogomesaraujo/aryth-ml-tic",
       dates: "January 2025",
       active: true,
       description:
         "A lightweight OCaml lexer and interpreter for arythmetic functions to consolidate what was learnt in Theory of Computation class.",
-      technologies: [
-        "OCaml","Menhir"
-      ],
+      technologies: ["OCaml", "Menhir"],
       links: [
         {
           type: "Source",
@@ -165,11 +158,17 @@ export const DATA = {
       dates: "November, 2024",
       location: "Remote",
       description:
-        "Gained hands-on experience with Rust's unique syntax and semantics, while developing a strong foundation in error handling and pattern matching techniques.",   
-        image:
-        "images.png",
-      links: [
-      ],
+        "Gained hands-on experience with Rust's unique syntax and semantics, while developing a strong foundation in error handling and pattern matching techniques.",
+      image: "images.png",
+      links: [],
+    },
+    {
+      title: "Industrial Robotics - Fundamentals",
+      dates: "May, 2025",
+      location: "On-Site",
+      description:
+        "Learnt about industrial robotics and how to program robotic arms.",
+      image: "ubi.png",
     },
     {
       title: "Scrum Foundation Certificate",
@@ -177,8 +176,7 @@ export const DATA = {
       location: "Remote",
       description:
         "Gained comprehensive knowledge of Agile principles and Scrum framework, including sprint planning, daily standups, and retrospectives. Learned to effectively collaborate in cross-functional teams and manage product backlogs.",
-      image:
-        "logo-certiprof.png",
+      image: "logo-certiprof.png",
     },
     {
       title: "Robocup 2016 - Leipzig, Germany, Certificate of Participation",
@@ -186,8 +184,7 @@ export const DATA = {
       location: "On-Site",
       description:
         "Participating in RoboCup was a transformative childhood experience that ignited my enduring passion for technology and programming.",
-      image:
-        "robocup.png",
+      image: "robocup.png",
     },
   ],
 } as const;
