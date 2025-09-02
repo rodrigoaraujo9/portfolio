@@ -2,38 +2,37 @@ import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
 export const DATA = {
-  name: "Diogo Araújo",
-  initials: "DA",
+  name: "Rodrigo Araújo",
+  initials: "RA",
   url: "https://dillion.io",
-  location: "Covilhã/Braga, Portugal",
+  location: "Porto/Braga, Portugal",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
-  description: "Computer Science Student at Universidade da Beira Interior.",
-  summary:
-    "Hi, I'm Diogo Gomes de Araújo, a third-year Computer Science student at Universidade da Beira Interior. From an early age, my fascination with technology led me to build simple games, websites and applications, fueling my passion for programming and shaping my career path.\n\nI'm always seeking to expand my skills and knowledge, whether through internships, projects, or new challenges. My aim is not only to grow as a software engineer but also to contribute to work that has a lasting impact.",
+  description: "Computer Science Student at the University of Porto.",
+  summary:"From an early age, my fascination with technology led me to build simple games, websites, and applications, fueling my passion for programming and shaping my career path. This early curiosity has evolved into a dedicated pursuit of excellence in computer science.\n\nI hold a **Bachelor's degree in Informatics and Computing Engineering** from the Faculty of Engineering, University of Porto, and am currently pursuing a **Master's degree in Computer Science** at the Faculty of Sciences. My passion lies in tackling **complex problems** and developing **clever, efficient solutions** that make a real difference.\n\nI thrive on **personal projects** that not only sharpen my existing skills but also provide opportunities to explore **new technologies and methodologies**. Whether working on academic challenges, internships, or independent ventures, I'm constantly seeking ways to expand my knowledge and push the boundaries of what I can create.\n\nMy goal extends beyond personal growth as a software engineer—I'm committed to contributing to **meaningful work that creates lasting impact** and drives innovation in the field of technology.",
   avatarUrl: "/me1.png",
   skillsImage: "/icons.svg",
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
-    email: "contact@diogoaraujo.com",
-    tel: "+351 914576371",
+    email: "contact@rodrigoaraujo.pt",
+    tel: "+351 914574743",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/diogogomesaraujo",
+        url: "https://github.com/rodrigoaraujo9",
         icon: Icons.github,
 
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/diogogomesaraujo/",
+        url: "https://www.linkedin.com/in/rodrigoaraujo9/",
         icon: Icons.linkedin,
 
         navbar: true,
       },
       Email: {
         name: "Send Email",
-        url: "mailto:contact@diogoaraujo.pro",
+        url: "mailto:contact@rodrigoaraujo.pt",
         icon: Icons.email,
 
         navbar: true,
@@ -42,36 +41,13 @@ export const DATA = {
   },
 
   work: [
-    {
-      company: "STAR JE",
-      href: "https://starje.pt/",
-      badges: [],
-      location: "Remote",
-      title: "Back-End Engineer and Project Manager",
-      logoUrl: "/starje.png",
-      start: "May 2024",
-      end: "July 2025",
-      description:
-        "As a backend engineer at Star JE, I built scalable and efficient solutions using Node.js and TypeScript, enhancing performance. I was also a recruter and managed different projects with multiple people.",
-    },
-    {
-      company: "Degema",
-      badges: [],
-      href: "https://degema.pt/",
-      location: "Remote",
-      title: "Restaurant Server",
-      logoUrl: "/degema.jpg",
-      start: "July 2023",
-      end: "September 2023",
-      description:
-        "As a waiter at Degema, I focused on teamwork and communication to ensure smooth service and a positive customer experience.",
-    },
+   
   ],
   education: [
     {
-      school: "Universidade da Beira Interior",
-      href: "https://www.ubi.pt/en/",
-      degree: "Bachelor's Degree in Computer Science and Engineering",
+      school: "Universidade do Porto",
+      href: "https://www.up.pt/portal/pt/",
+      degree: "Bachelor's Degree in Informatics and Computing Engineering",
       logoUrl: "/ubi.png",
       start: "2022",
       end: "2025",
