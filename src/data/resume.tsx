@@ -20,29 +20,23 @@ export const DATA = {
         name: "GitHub",
         url: "https://github.com/rodrigoaraujo9",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/rodrigoaraujo9/",
         icon: Icons.linkedin,
-
         navbar: true,
       },
       Email: {
         name: "Send Email",
         url: "mailto:contact@rodrigoaraujo.pt",
         icon: Icons.email,
-
         navbar: true,
       },
     },
   },
-
-  work: [
-   
-  ],
+  work: [],
   education: [
     {
       school: "Universidade do Porto",
@@ -66,12 +60,12 @@ export const DATA = {
         {
           type: "Wallet",
           href: "https://github.com/diogogomesaraujo/aokiji",
-          icon: <Icons.github className="size-3" />,
+          icon: "github", // Changed to string
         },
         {
           type: "Library",
           href: "https://github.com/diogogomesaraujo/frost-sig",
-          icon: <Icons.github className="size-3" />,
+          icon: "github", // Changed to string
         },
       ],
       image: "/wallet.gif",
@@ -88,7 +82,7 @@ export const DATA = {
         {
           type: "Source",
           href: "https://github.com/diogogomesaraujo/funk-txt",
-          icon: <Icons.github className="size-3" />,
+          icon: "github", // Changed to string
         },
       ],
       image: "/funk.gif",
@@ -105,7 +99,7 @@ export const DATA = {
         {
           type: "Source",
           href: "https://github.com/diogogomesaraujo/aryth-ml-tic",
-          icon: <Icons.github className="size-3" />,
+          icon: "github", // Changed to string
         },
       ],
       image: "/interpreter.png",
@@ -122,7 +116,7 @@ export const DATA = {
         {
           type: "Source",
           href: "https://github.com/diogogomesaraujo/ocaml-game",
-          icon: <Icons.github className="size-3" />,
+          icon: "github", // Changed to string
         },
       ],
       image: "/elliot.gif",
