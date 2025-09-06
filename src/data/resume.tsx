@@ -4,7 +4,7 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Rodrigo Araújo",
   initials: "RA",
-  url: "https://dillion.io",
+  url: "https://rodrigoaraujo.pt",
   location: "Porto/Braga, Portugal",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description: "Computer Science Student at the University of Porto.",
@@ -48,7 +48,7 @@ export const DATA = {
       school: "Universidade do Porto",
       href: "https://www.up.pt/portal/pt/",
       degree: "Bachelor's Degree in Informatics and Computing Engineering",
-      logoUrl: "/ubi.png",
+      logoUrl: "/feup.jpg ",
       start: "2022",
       end: "2025",
     },
