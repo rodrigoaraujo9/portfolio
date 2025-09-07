@@ -15,7 +15,7 @@ export const AnimatedThemeToggler = ({ className }: Props) => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
   const buttonRef = useRef<HTMLButtonElement | null>(null);
 
-  // Sync initial state with current <html> class
+  // Sync initial state from current <html> class on mount
   useLayoutEffect(() => {
     if (typeof document === "undefined") return;
     setIsDarkMode(document.documentElement.classList.contains("dark"));
@@ -32,37 +32,40 @@ export const AnimatedThemeToggler = ({ className }: Props) => {
       });
     };
 
-    // Feature-detect View Transitions API
-    const startVT = document.startViewTransition;
+    // ---- Local inline typing for the experimental API (Option A) ----
+    const doc = document as Document & {
+      startViewTransition?: (cb: () => void) => {
+        ready: Promise<void>;
+        finished: Promise<void>;
+        updateCallbackDone: Promise<void>;
+        skipTransition(): void;
+      };
+    };
+    const startVT = doc.startViewTransition;
 
     if (typeof startVT === "function") {
-      // Run the DOM update inside the transition
-      const vt = startVT(() => {
-        doToggle();
-      });
-
-      // Wait for transition to be ready before animating the reveal ripple
       try {
+        const vt = startVT(() => {
+          doToggle();
+        });
         await vt.ready;
       } catch {
-        // ignore; we'll still be in the toggled state
+        // ignore transition errors; state already toggled
       }
     } else {
-      // Fallback: no fancy transition
+      // Fallback if API not supported
       doToggle();
     }
 
-    // Respect reduced motion
+    // Respect reduced-motion preference
     const prefersReduced =
       typeof window !== "undefined" &&
       window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
-
     if (prefersReduced) return;
 
-    // Ripple reveal animation (best-effort; ignore if unsupported)
+    // Reveal ripple animation (best-effort; ignore if unsupported)
     try {
-      const { top, left, width, height } =
-        buttonRef.current.getBoundingClientRect();
+      const { top, left, width, height } = buttonRef.current.getBoundingClientRect();
       const y = top + height / 2;
       const x = left + width / 2;
 
@@ -84,7 +87,7 @@ export const AnimatedThemeToggler = ({ className }: Props) => {
         }
       );
     } catch {
-      // Silently ignore if animation is not supported
+      // no-op
     }
   };
 
@@ -103,3 +106,5 @@ export const AnimatedThemeToggler = ({ className }: Props) => {
     </button>
   );
 };
+
+export default AnimatedThemeToggler;
