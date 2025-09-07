@@ -1,58 +1,98 @@
 "use client";
 
-import { SunDim } from "lucide-react";
-import { useState, useRef } from "react";
+import { useState, useRef, useLayoutEffect } from "react";
 import { flushSync } from "react-dom";
-import { cn } from "@/lib/utils";
+import { SunDim } from "lucide-react";
 import { MoonIcon } from "@radix-ui/react-icons";
+import { cn } from "@/lib/utils";
 import { buttonVariants } from "@/components/ui/button";
 
-type props = {
+type Props = {
   className?: string;
 };
 
-export const AnimatedThemeToggler = ({ className }: props) => {
+export const AnimatedThemeToggler = ({ className }: Props) => {
   const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
   const buttonRef = useRef<HTMLButtonElement | null>(null);
-  
+
+  // Sync initial state with current <html> class
+  useLayoutEffect(() => {
+    if (typeof document === "undefined") return;
+    setIsDarkMode(document.documentElement.classList.contains("dark"));
+  }, []);
+
   const changeTheme = async () => {
+    if (typeof document === "undefined") return; // SSR guard
     if (!buttonRef.current) return;
 
-    await document.startViewTransition(() => {
+    const doToggle = () => {
       flushSync(() => {
         const dark = document.documentElement.classList.toggle("dark");
         setIsDarkMode(dark);
       });
-    }).ready;
+    };
 
-    const { top, left, width, height } =
-      buttonRef.current.getBoundingClientRect();
-    const y = top + height / 2;
-    const x = left + width / 2;
+    // Feature-detect View Transitions API
+    const startVT = document.startViewTransition;
 
-    const right = window.innerWidth - left;
-    const bottom = window.innerHeight - top;
-    const maxRad = Math.hypot(Math.max(left, right), Math.max(top, bottom));
+    if (typeof startVT === "function") {
+      // Run the DOM update inside the transition
+      const vt = startVT(() => {
+        doToggle();
+      });
 
-    document.documentElement.animate(
-      {
-        clipPath: [
-          `circle(0px at ${x}px ${y}px)`,
-          `circle(${maxRad}px at ${x}px ${y}px)`,
-        ],
-      },
-      {
-        duration: 700,
-        easing: "ease-in-out",
-        pseudoElement: "::view-transition-new(root)",
-      },
-    );
+      // Wait for transition to be ready before animating the reveal ripple
+      try {
+        await vt.ready;
+      } catch {
+        // ignore; we'll still be in the toggled state
+      }
+    } else {
+      // Fallback: no fancy transition
+      doToggle();
+    }
+
+    // Respect reduced motion
+    const prefersReduced =
+      typeof window !== "undefined" &&
+      window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches;
+
+    if (prefersReduced) return;
+
+    // Ripple reveal animation (best-effort; ignore if unsupported)
+    try {
+      const { top, left, width, height } =
+        buttonRef.current.getBoundingClientRect();
+      const y = top + height / 2;
+      const x = left + width / 2;
+
+      const right = window.innerWidth - left;
+      const bottom = window.innerHeight - top;
+      const maxRad = Math.hypot(Math.max(left, right), Math.max(top, bottom));
+
+      document.documentElement.animate(
+        {
+          clipPath: [
+            `circle(0px at ${x}px ${y}px)`,
+            `circle(${maxRad}px at ${x}px ${y}px)`,
+          ],
+        },
+        {
+          duration: 700,
+          easing: "ease-in-out",
+          pseudoElement: "::view-transition-new(root)",
+        }
+      );
+    } catch {
+      // Silently ignore if animation is not supported
+    }
   };
-  
+
   return (
-    <button 
-      ref={buttonRef} 
-      onClick={changeTheme} 
+    <button
+      ref={buttonRef}
+      onClick={changeTheme}
+      aria-pressed={isDarkMode}
       className={cn(
         buttonVariants({ variant: "ghost", size: "icon" }),
         "size-12",
