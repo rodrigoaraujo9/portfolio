@@ -19,6 +19,7 @@ avatarUrl: "/me1.png",
     "Docker",
     "Haskell",
     "OCaml",
+    "Laravel"
   ],
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
@@ -125,8 +126,8 @@ avatarUrl: "/me1.png",
 {
   title: "Gargantua — Black Hole Simulation",
   href: "https://github.com/rodrigoaraujo9/gargantua",
-  dates: "Jan 2024 - Feb 2024",
-  active: false,
+  dates: "Sep 2025 - Present",
+  active: true,
   description:
     "Interactive Rust simulation of light beams bending around a Schwarzschild black hole, inspired by Interstellar's Gargantua. Features real-time physics with RK4 integration and cinematic visualization.",
   technologies: ["Rust", "Raylib", "Physics Simulation", "RK4 Integration", "Schwarzschild Metric", "Computer Graphics"],
