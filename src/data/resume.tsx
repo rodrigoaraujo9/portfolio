@@ -8,9 +8,18 @@ export const DATA = {
   location: "Porto/Braga, Portugal",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description: "Computer Science Student at the University of Porto.",
-  summary:"From an early age, my fascination with technology led me to build simple games, websites, and applications, fueling my passion for programming and shaping my career path. This early curiosity has evolved into a dedicated pursuit of excellence in computer science.\n\nI hold a **Bachelor's degree in Informatics and Computing Engineering** from the Faculty of Engineering, University of Porto, and am currently pursuing a **Master's degree in Computer Science** at the Faculty of Sciences. My passion lies in tackling **complex problems** and developing **clever, efficient solutions** that make a real difference.\n\nI thrive on **personal projects** that not only sharpen my existing skills but also provide opportunities to explore **new technologies and methodologies**. Whether working on academic challenges, internships, or independent ventures, I'm constantly seeking ways to expand my knowledge and push the boundaries of what I can create.\n\nMy goal extends beyond personal growth as a software engineer—I'm committed to contributing to **meaningful work that creates lasting impact** and drives innovation in the field of technology.",
-  avatarUrl: "/me1.png",
-  skillsImage: "/icons.svg",
+summary:"Having completed my **Bachelor's degree in Informatics and Computing Engineering** from the Faculty of Engineering, University of Porto, I am now pursuing a **Master's degree in Computer Science** at the Faculty of Sciences.\n\nMy interests center on **distributed systems**, **parallel algorithms**, and **performance optimization**. I'm fascinated by the challenges of building systems that scale efficiently and the mathematical elegance of algorithmic optimization.\n\nI'm particularly drawn to **machine learning**, **program verification**, and **cryptography** - fields that combine theoretical depth with real-world impact. These areas represent the intersection of rigorous computer science and practical problem-solving that drives my academic focus.\n\nMy approach involves understanding problems at their core before developing **efficient solutions**. I enjoy working across different programming paradigms and languages, from low-level system programming to high-level application development.\n\nOutside of computing, I **compose and produce music**, which provides a creative outlet and a different perspective on problem-solving and structured thinking.\n\nCurrently, I'm seeking opportunities in **research** or **industry** where I can contribute to meaningful projects involving distributed computing, algorithmic optimization, or security systems while continuing to expand my expertise in these areas.",  
+avatarUrl: "/me1.png",
+  skills: [
+    "C/C++",
+    "Rust",
+    "Java",
+    "Python",
+    "PostgresSQL",
+    "Docker",
+    "Haskell",
+    "OCaml",
+  ],
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     email: "contact@rodrigoaraujo.pt",
@@ -45,7 +54,15 @@ export const DATA = {
   ],
   education: [
     {
-      school: "Universidade do Porto",
+      school: "Faculdade de Ciências da Universidade do Porto",
+      href: "https://www.up.pt/portal/pt/",
+      degree: "Master's Degree in Computer Science",
+      logoUrl: "/fcup.jpg ",
+      start: "2025",
+      end: "Present",
+    },
+    {
+      school: "Faculdade de Engenharia da Universidade do Porto",
       href: "https://www.up.pt/portal/pt/",
       degree: "Bachelor's Degree in Informatics and Computing Engineering",
       logoUrl: "/feup.jpg ",
@@ -55,78 +72,73 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Group Wallet for Nano",
-      href: "https://github.com/diogogomesaraujo/aokiji",
-      dates: "Feb 2025 - July 2025",
-      active: true,
-      description:
-        "A Rust library and wallet for Nano group transactions using FROST as the final project of my CS degree at Universidade da Beira Interior.",
-      technologies: ["Rust", "Tokio", "Dioxus", "Dalek"],
-      links: [
-        {
-          type: "Wallet",
-          href: "https://github.com/diogogomesaraujo/aokiji",
-          icon: <Icons.github className="size-3" />,
-        },
-        {
-          type: "Library",
-          href: "https://github.com/diogogomesaraujo/frost-sig",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/wallet.gif",
-    },
+  title: "Hospital Scheduling Optimizer",
+  href: "https://github.com/rodrigoaraujo9/metaheuristic-hospital-scheduler",
+  dates: "Mar 2025 - Apr 2025",
+  active: false,
+  description:
+    "AI-powered patient admission scheduling using advanced metaheuristic algorithms. With six optimization algorithms and interactive web interface.",
+  technologies: ["Python", "Streamlit", "Genetic Algorithm", "Simulated Annealing", "Tabu Search", "Matplotlib"],
+  links: [
     {
-      title: "Text Editor",
-      href: "https://github.com/diogogomesaraujo/funk-txt",
-      dates: "January 2025",
-      active: true,
-      description:
-        "A fluid text editor written in C to learn more about systems programming threads and memory managment.",
-      technologies: ["C", "Raylib"],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/diogogomesaraujo/funk-txt",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/funk.gif",
+      type: "Source",
+      href: "https://github.com/rodrigoaraujo9/metaheuristic-hospital-scheduler",
+      icon: <Icons.github className="size-3" />,
     },
+  ],
+  image: "/hospital.jpg",
+},
     {
-      title: "Arythmetic Interpreter",
-      href: "https://github.com/diogogomesaraujo/aryth-ml-tic",
-      dates: "January 2025",
-      active: true,
-      description:
-        "A lightweight OCaml lexer and interpreter for arythmetic functions to consolidate what was learnt in Theory of Computation class.",
-      technologies: ["OCaml", "Menhir"],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/diogogomesaraujo/aryth-ml-tic",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/interpreter.png",
-    },
+  title: "UFC Fight Outcome Prediction System",
+  href: "https://github.com/educunhA04/predicting_UFC_results",
+  dates: "Apr 2025 - May 2025",
+  active: false,
+  description:
+    "ML system predicting UFC fight outcomes with 70-80% accuracy using advanced feature engineering and ensemble methods.",
+  technologies: ["Python", "Streamlit", "Scikit-Learn", "Random Forest", "Gradient Boosting", "Neural Networks", "SVM"],
+  links: [
     {
-      title: "OCaml Game",
-      href: "https://github.com/diogogomesaraujo/ocaml-game",
-      dates: "January 2024",
-      active: true,
-      description:
-        "A simple Mr. Robot themed game made with Raylib in OCaml. Inspired by TJ Devries.",
-      technologies: ["OCaml", "Raylib"],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/diogogomesaraujo/ocaml-game",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/elliot.gif",
+      type: "Source",
+      href: "https://github.com/educunhA04/predicting_UFC_results",
+      icon: <Icons.github className="size-3" />,
     },
+  ],
+  image: "/ufc.jpg",
+},
+{
+  title: "Flight Management System",
+  href: "https://github.com/rodrigoaraujo9/flight-management-system",
+  dates: "Oct 2023 - Dec 2023",
+  active: false,
+  description:
+    "Comprehensive C++ flight management system providing intelligent flight routing, network analysis, and airline statistics using advanced graph algorithms and data structures.",
+  technologies: ["C++", "Graph Algorithms", "BFS/DFS", "STL", "Data Structures", "Haversine Distance"],
+  links: [
+    {
+      type: "Source",
+      href: "https://github.com/rodrigoaraujo9/flight-management-system",
+      icon: <Icons.github className="size-3" />,
+    },
+  ],
+  image: "/flight.jpg",
+},
+{
+  title: "Gargantua — Black Hole Simulation",
+  href: "https://github.com/rodrigoaraujo9/gargantua",
+  dates: "Jan 2024 - Feb 2024",
+  active: false,
+  description:
+    "Interactive Rust simulation of light beams bending around a Schwarzschild black hole, inspired by Interstellar's Gargantua. Features real-time physics with RK4 integration and cinematic visualization.",
+  technologies: ["Rust", "Raylib", "Physics Simulation", "RK4 Integration", "Schwarzschild Metric", "Computer Graphics"],
+  links: [
+    {
+      type: "Source",
+      href: "https://github.com/rodrigoaraujo9/gargantua",
+      icon: <Icons.github className="size-3" />,
+    },
+  ],
+  image: "/gargantua.png",
+},
   ],
   hackathons: [
     {
