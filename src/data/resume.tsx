@@ -10,18 +10,15 @@ export const DATA = {
   description: "Computer Science Student at the University of Porto.",
 summary:"Having completed my **Bachelor's degree in Informatics and Computing Engineering** from the Faculty of Engineering, University of Porto, I am now pursuing a **Master's degree in Computer Science** at the Faculty of Sciences.\n\nMy interests center on **distributed systems**, **parallel algorithms**, and **performance optimization**. I'm fascinated by the challenges of building systems that scale efficiently and the mathematical elegance of algorithmic optimization.\n\nI'm particularly drawn to **machine learning**, **program verification**, and **cryptography** - fields that combine theoretical depth with real-world impact. These areas represent the intersection of rigorous computer science and practical problem-solving that drives my academic focus.\n\nMy approach involves understanding problems at their core before developing **efficient solutions**. I enjoy working across different programming paradigms and languages, from low-level system programming to high-level application development.\n\nOutside of computing, I **compose and produce music**, which provides a creative outlet and a different perspective on problem-solving and structured thinking.\n\nCurrently, I'm seeking opportunities in **research** or **industry** where I can contribute to meaningful projects involving distributed computing, algorithmic optimization, or security systems while continuing to expand my expertise in these areas.",  
 avatarUrl: "/me1.png",
-  skills: [
-    "C/C++",
-    "Rust",
-    "Java",
-    "Python",
-    "PostgresSQL",
-    "Docker",
-    "Haskell",
-    "OCaml",
-    "Laravel"
+  skillsImage: "/icons.svg",
+  navbar: [{ href: "/", icon: HomeIcon, label: "Home" },
+    {
+      href: "/curriculum_vitae.pdf",
+      icon: NotebookIcon,
+      label: "Curriculum",
+      download: true,
+    },
   ],
-  navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     email: "contact@rodrigoaraujo.pt",
     tel: "+351 914574743",
@@ -72,26 +69,31 @@ avatarUrl: "/me1.png",
     },
   ],
   projects: [
-    {
-  title: "Hospital Scheduling Optimizer",
-  href: "https://github.com/rodrigoaraujo9/metaheuristic-hospital-scheduler",
-  dates: "Mar 2025 - Apr 2025",
-  active: false,
-  description:
-    "AI-powered patient admission scheduling using advanced metaheuristic algorithms. With six optimization algorithms and interactive web interface.",
-  technologies: ["Python", "Streamlit", "Genetic Algorithm", "Simulated Annealing", "Tabu Search", "Matplotlib"],
-  links: [
-    {
-      type: "Source",
-      href: "https://github.com/rodrigoaraujo9/metaheuristic-hospital-scheduler",
-      icon: <Icons.github className="size-3" />,
+     {
+      title: "Game for RetroJam 2025",
+      href: "https://github.com/rodrigoaraujo9/sisyphus-retrojam-2025",
+      dates: "October 2025",
+      active: true,
+      description:
+        'A game developed for IEEE RetroJam 2025 using Raylib and Rust about Rebirth".',
+      technologies: ["Rust", "Raylib"],
+      links: [
+        {
+          type: "Itch Page",
+          href: "https://github.com/diogogomesaraujo/ocaml-game",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/diogogomesaraujo/ocaml-game",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/demo.gif",
     },
-  ],
-  image: "/hospital.jpg",
-},
     {
   title: "UFC Fight Outcome Prediction System",
-  href: "https://github.com/educunhA04/predicting_UFC_results",
+  href: "https://github.com/rodrigoaraujo9/ufc-fight-outcome-predictor",
   dates: "Apr 2025 - May 2025",
   active: false,
   description:
@@ -142,30 +144,14 @@ avatarUrl: "/me1.png",
 },
   ],
   hackathons: [
-    {
-      title: "Learn Rust from Scratch",
-      dates: "November, 2024",
-      location: "Remote",
-      description:
-        "Gained hands-on experience with Rust's unique syntax and semantics, while developing a strong foundation in error handling and pattern matching techniques.",
-      image: "images.png",
-      links: [],
-    },
-    {
-      title: "Industrial Robotics - Fundamentals",
-      dates: "May, 2025",
+     {
+      title: "2nd Place in IEEE RetroJam 2025",
+      dates: "October, 2025",
       location: "On-Site",
       description:
-        "Learnt about industrial robotics and how to program robotic arms.",
-      image: "ubi.png",
-    },
-    {
-      title: "Scrum Foundation Certificate",
-      dates: "September, 2024",
-      location: "Remote",
-      description:
-        "Gained comprehensive knowledge of Agile principles and Scrum framework, including sprint planning, daily standups, and retrospectives. Learned to effectively collaborate in cross-functional teams and manage product backlogs.",
-      image: "logo-certiprof.png",
+        "Placed second alongside my brother Rodrigo with a retro-styled game developed in 48 hours with Rust and Raylib",
+      image: "ieee.png",
+      links: [""],
     },
     {
       title: "Robocup 2016 - Leipzig, Germany, Certificate of Participation",
@@ -175,5 +161,14 @@ avatarUrl: "/me1.png",
         "Participating in RoboCup was a transformative childhood experience that ignited my enduring passion for technology and programming.",
       image: "robocup.png",
     },
+    {
+  title: "4th Place in Canguru Matemático Sem Fronteiras",
+  dates: "2016",
+  location: "Portugal",
+  description:
+    "Achieved 4th place nationally in the Canguru Matemático competition, demonstrating strong mathematical reasoning and problem-solving abilities from an early age.",
+  image: "canguru.png",
+  links: [""],
+}
   ],
 } as const;

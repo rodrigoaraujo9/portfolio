@@ -78,15 +78,17 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className="text-xl font-bold">Skills</h2>
           </BlurFade>
-          <div className="flex flex-wrap gap-1">
-            {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge key={skill}>{skill}</Badge>
-              </BlurFade>
-            ))}
-          </div>
+          <BlurFade delay={BLUR_FADE_DELAY * 10}>
+            <Image
+              src={DATA.skillsImage} // Use the dynamic property
+              alt="Programming Skills"
+              width={192}
+              height={48}
+              className="h-12 w-auto object-contain"
+            />
+          </BlurFade>
         </div>
-</section>
+      </section>
 
       <section id="projects">
         <div className="space-y-12 w-full py-12">
@@ -126,7 +128,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      {/* 
+       
       <section id="hackathons">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
@@ -162,7 +164,7 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
-      */}
+      
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
