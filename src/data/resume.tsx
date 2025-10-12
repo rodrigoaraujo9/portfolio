@@ -8,8 +8,9 @@ export const DATA = {
   location: "Porto/Braga, Portugal",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description: "Computer Science Student at the University of Porto.",
-summary:"Having completed my **Bachelor's degree in Informatics and Computing Engineering** from the Faculty of Engineering, University of Porto, I am now pursuing a **Master's degree in Computer Science** at the Faculty of Sciences.\n\nMy interests center on **distributed systems**, **parallel algorithms**, and **performance optimization**. I'm fascinated by the challenges of building systems that scale efficiently and the mathematical elegance of algorithmic optimization.\n\nI'm particularly drawn to **machine learning**, **program verification**, and **cryptography** - fields that combine theoretical depth with real-world impact. These areas represent the intersection of rigorous computer science and practical problem-solving that drives my academic focus.\n\nMy approach involves understanding problems at their core before developing **efficient solutions**. I enjoy working across different programming paradigms and languages, from low-level system programming to high-level application development.\n\nOutside of computing, I **compose and produce music**, which provides a creative outlet and a different perspective on problem-solving and structured thinking.\n\nCurrently, I'm seeking opportunities in **research** or **industry** where I can contribute to meaningful projects involving distributed computing, algorithmic optimization, or security systems while continuing to expand my expertise in these areas.",  
-avatarUrl: "/me1.png",
+summary:"Having completed my **Bachelor's degree in Informatics and Computing Engineering** I am now pursuing a **Master's degree in Computer Science** at FCUP. Originally from **Braga, Portugal**, I’m driven by a passion for building efficient and scalable systems.\n\nMy interests center on **distributed and parallel systems**, **algorithms**, and **performance optimization**, where I enjoy tackling the balance between theoretical depth and practical implementation. I’m also drawn to **machine learning**, **program verification**, and **cryptography**, areas that reflect the intersection of rigorous computer science and real-world impact.\n\nI approach problems by understanding their core before designing **precise, optimized solutions**, working fluently across both low-level system programming and high-level application development.\n\nOutside computing, I **compose and produce music**, which provides a creative counterpoint to my technical work and strengthens my sense of structure and problem-solving.\n\nI’m currently seeking opportunities in **research** or **industry** where I can contribute to impactful projects involving distributed computing, algorithmic optimization, or security systems, while continuing to expand my expertise in these domains.",
+
+  avatarUrl: "/me1.png",
   skillsImage: "/icons.svg",
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" },
     {
@@ -89,7 +90,7 @@ avatarUrl: "/me1.png",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/demo.gif",
+      image: "/game.png",
     },
     {
   title: "UFC Fight Outcome Prediction System",
@@ -153,13 +154,21 @@ avatarUrl: "/me1.png",
       image: "ieee.png",
       links: [""],
     },
-    {
-      title: "Robocup 2016 - Leipzig, Germany, Certificate of Participation",
+ {
+      title: "World 4th Place – RoboCup Rescue Superteam 2016",
       dates: "Summer, 2016",
-      location: "On-Site",
+      location: "Leipzig, Germany",
       description:
-        "Participating in RoboCup was a transformative childhood experience that ignited my enduring passion for technology and programming.",
+        "Represented Portugal internationally at RoboCup Leipzig in autonomous robotics competition. Participating in RoboCup was a transformative childhood experience that ignited my enduring passion for technology and programming.",
       image: "robocup.png",
+    },
+    {
+      title: "National 1st Place – Robotics Championship (CoSpace Rescue) 2016",
+      dates: "2016",
+      location: "Portugal",
+      description:
+        "Awarded for excellence in robot programming, navigation algorithms, and autonomous systems.",
+      image: "nacional.png",
     },
     {
   title: "4th Place in Canguru Matemático Sem Fronteiras",
