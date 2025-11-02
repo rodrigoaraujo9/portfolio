@@ -81,12 +81,12 @@ summary:"Having completed my **Bachelor's degree in Informatics and Computing En
       links: [
         {
           type: "Itch Page",
-          href: "https://github.com/diogogomesaraujo/ocaml-game",
+          href: "https://diogoaraujo2004.itch.io/sisyphus",
           icon: <Icons.github className="size-3" />,
         },
         {
           type: "Source",
-          href: "https://github.com/diogogomesaraujo/ocaml-game",
+          href: "https://github.com/rodrigoaraujo9/sisyphus-retrojam-2025",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -150,7 +150,7 @@ summary:"Having completed my **Bachelor's degree in Informatics and Computing En
       dates: "October, 2025",
       location: "On-Site",
       description:
-        "Placed second alongside my brother Rodrigo with a retro-styled game developed in 48 hours with Rust and Raylib",
+        "Placed second alongside my brother Diogo with a retro-styled game developed in 48 hours with Rust and Raylib",
       image: "ieee.png",
       links: [""],
     },
