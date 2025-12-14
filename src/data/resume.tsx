@@ -8,7 +8,7 @@ export const DATA = {
   location: "Porto/Braga, Portugal",
   locationLink: "https://www.google.com/maps/place/sanfrancisco",
   description: "Computer Science Student at the University of Porto.",
-summary:"Having completed my **Bachelor's degree in Informatics and Computing Engineering** I am now pursuing a **Master's degree in Computer Science** at FCUP. Originally from **Braga, Portugal**, I’m driven by a passion for building efficient and scalable systems.\n\nMy interests center on **distributed and parallel systems**, **algorithms**, and **performance optimization**, where I enjoy tackling the balance between theoretical depth and practical implementation. I’m also drawn to **machine learning**, **program verification**, and **cryptography**, areas that reflect the intersection of rigorous computer science and real-world impact.\n\nI approach problems by understanding their core before designing **precise, optimized solutions**, working fluently across both low-level system programming and high-level application development.\n\nOutside computing, I **compose and produce music**, which provides a creative counterpoint to my technical work and strengthens my sense of structure and problem-solving.\n\nI’m currently seeking opportunities in **research** or **industry** where I can contribute to impactful projects involving distributed computing, algorithmic optimization, or security systems, while continuing to expand my expertise in these domains.",
+summary:"I'm currently pursuing a Master's in Computer Science, where I focus on distributed systems, optimization problems, and cryptography. I'm fascinated by the challenges of building scalable systems and solving complex computational problems. When I'm not deep in code or research, you'll find me composing music—it's my creative outlet and passion outside of tech.",
 
   avatarUrl: "/me1.png",
   skillsImage: "/icons.svg",
@@ -49,7 +49,7 @@ summary:"Having completed my **Bachelor's degree in Informatics and Computing En
   },
 
   work: [
-   
+
   ],
   education: [
     {
@@ -127,7 +127,7 @@ summary:"Having completed my **Bachelor's degree in Informatics and Computing En
   image: "/flight.jpg",
 },
 {
-  title: "Gargantua — Black Hole Simulation",
+    title: "Gargantua — Black Hole Simulation",
   href: "https://github.com/rodrigoaraujo9/gargantua",
   dates: "Sep 2025 - Present",
   active: true,

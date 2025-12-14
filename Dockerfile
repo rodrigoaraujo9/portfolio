@@ -1,5 +1,5 @@
 # Build stage
-FROM --platform=linux/amd64 node:18.19-alpine3.19 AS builder
+FROM --platform=linux/amd64 node:20-alpine AS builder
 
 # Install pnpm
 RUN corepack enable && corepack prepare pnpm@latest --activate
@@ -27,7 +27,7 @@ RUN chown -R nextjs:nodejs .
 RUN pnpm build
 
 # Production stage
-FROM --platform=linux/amd64 node:18-alpine AS runner
+FROM --platform=linux/amd64 node:20-alpine AS runner
 
 WORKDIR /app
 
@@ -50,9 +50,9 @@ USER nextjs
 # Expose port
 EXPOSE 3000
 
-# Set environment variables
-ENV PORT 3000
-ENV HOSTNAME "0.0.0.0"
-ENV NODE_ENV production
+# Set environment variables (using = format to avoid warnings)
+ENV PORT=3000
+ENV HOSTNAME="0.0.0.0"
+ENV NODE_ENV=production
 
-CMD ["node", "server.js"] 
+CMD ["node", "server.js"]
