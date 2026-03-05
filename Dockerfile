@@ -40,9 +40,9 @@ RUN addgroup --system --gid 1001 nodejs && \
 
 # Copy built assets from builder
 COPY --from=builder --chown=nextjs:nodejs /app/next.config.js ./
-COPY --from=builder --chown=nextjs:nodejs /app/public ./public
 COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
 COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+COPY --from=builder --chown=nextjs:nodejs /app/public ./public
 
 # Set user
 USER nextjs
@@ -50,7 +50,7 @@ USER nextjs
 # Expose port
 EXPOSE 3000
 
-# Set environment variables (using = format to avoid warnings)
+# Set environment variables
 ENV PORT=3000
 ENV HOSTNAME="0.0.0.0"
 ENV NODE_ENV=production

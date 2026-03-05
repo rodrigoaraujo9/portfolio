@@ -9,9 +9,9 @@ export const DATA = {
     locationLink: "https://www.google.com/maps/place/sanfrancisco",
     description: "Computer Science Student at the University of Porto.",
     summary:
-        "I'm currently pursuing a Master's in Computer Science, where I focus on distributed systems, optimization problems, and cryptography. I'm fascinated by the challenges of building scalable systems and solving complex computational problems. Lately, i've been diving deep into Rust. When I'm not coding or studying, you'd be likely to find me composing and writing music — it's my creative outlet and passion outside of tech. I am currently looking for research opportunities and can't wait to contribute to meaningful projects!",
+        "I'm currently pursuing a **Master's in Computer Science**, where I focus on **distributed systems, optimization problems, and cryptography**. I'm fascinated by the challenges of building scalable systems and solving complex computational problems. Lately, I've been diving deep into **Rust**. When I'm not coding or studying, you'd be likely to find me **composing and writing music** — it's my creative outlet and passion outside of tech. I am currently **looking for research opportunities** and can't wait to contribute to meaningful projects!",
 
-    avatarUrl: "/avatar.png",
+    avatarUrl: "/avatar1.png",
     skillsImage: "/icons.svg",
     navbar: [
         { href: "/", icon: HomeIcon, label: "Home" },
@@ -71,6 +71,28 @@ export const DATA = {
     ],
     projects: [
         {
+            title: "Mugen – Terminal Synth",
+            href: "https://github.com/rodrigoaraujo9/mugen",
+            dates: "2026 - Present",
+            active: true,
+            description:
+                "A real-time, polyphonic terminal-based synthesizer in Rust",
+            technologies: [
+                "Rust",
+                "Audio Programming",
+                "Real-time Systems",
+                "Ratatui",
+            ],
+            links: [
+                {
+                    type: "Source",
+                    href: "https://github.com/rodrigoaraujo9/mugen",
+                    icon: <Icons.github className="size-3" />,
+                },
+            ],
+            image: "/mugen.png",
+        },
+        {
             title: "Game for RetroJam 2025",
             href: "https://github.com/rodrigoaraujo9/sisyphus-retrojam-2025",
             dates: "October 2025",
@@ -93,40 +115,6 @@ export const DATA = {
             image: "/game.png",
         },
         {
-            title: "Space Invaders – Custom Drivers",
-            href: "https://github.com/rodrigoaraujo9/<REPO_NAME>",
-            dates: "2025",
-            active: false,
-            description:
-                "A simple Space Invaders clone on MINIX with drivers made from scratch: triple-buffered graphics, keyboard + mouse input, and clock/RTC timing for smooth gameplay.",
-            technologies: ["C", "MINIX", "Drivers"],
-            links: [
-                {
-                    type: "Source",
-                    href: "https://github.com/rodrigoaraujo9/space-invaders-c",
-                    icon: <Icons.github className="size-3" />,
-                },
-            ],
-            image: "/space_invaders.jpeg",
-        },
-        {
-            title: "Flight Management System",
-            href: "https://github.com/rodrigoaraujo9/flight-management-system",
-            dates: "Oct 2023 - Dec 2023",
-            active: false,
-            description:
-                "Comprehensive C++ flight management system providing intelligent flight routing, network analysis, and airline statistics using advanced graph algorithms and data structures.",
-            technologies: ["C++", "Graph Algorithms", "Data Structures"],
-            links: [
-                {
-                    type: "Source",
-                    href: "https://github.com/rodrigoaraujo9/flight-management-system",
-                    icon: <Icons.github className="size-3" />,
-                },
-            ],
-            image: "/flight.jpg",
-        },
-        {
             title: "Gargantua – Black Hole Simulation",
             href: "https://github.com/rodrigoaraujo9/gargantua",
             dates: "Sep 2025 - Present",
@@ -142,6 +130,28 @@ export const DATA = {
                 },
             ],
             image: "/gargantua.png",
+        },
+        {
+            title: "Lambda Calculus Interpreter",
+            href: "https://github.com/rodrigoaraujo9/lambda-interpreter",
+            dates: "2025",
+            active: false,
+            description:
+                "A simple lambda calculus interpreter in Haskell. Parses and evaluates expressions with applicative-order evaluation to weak normal form.",
+            technologies: [
+                "Haskell",
+                "Lambda Calculus",
+                "Parsing (Happy)",
+                "Cabal",
+            ],
+            links: [
+                {
+                    type: "Source",
+                    href: "https://github.com/rodrigoaraujo9/lambda-interpreter",
+                    icon: <Icons.github className="size-3" />,
+                },
+            ],
+            image: "/lambda.png",
         },
     ],
     hackathons: [
