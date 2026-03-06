@@ -1,6 +1,8 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
+const ASSET_VERSION = "20260306";
+
 export const DATA = {
     name: "Rodrigo Araújo",
     initials: "RA",
@@ -11,12 +13,12 @@ export const DATA = {
     summary:
         "I'm currently pursuing a **Master's in Computer Science**, where I focus on **distributed systems, optimization problems, and cryptography**. I'm fascinated by the challenges of building scalable systems and solving complex computational problems. Lately, I've been diving deep into **Rust**. When I'm not coding or studying, you'd be likely to find me **composing and writing music** — it's my creative outlet and passion outside of tech. I am currently **looking for research opportunities** and can't wait to contribute to meaningful projects!",
 
-    avatarUrl: "/avatar1.png",
-    skillsImage: "/icons.svg",
+    avatarUrl: `/avatar1.png?v=${ASSET_VERSION}`,
+    skillsImage: `/icons.svg?v=${ASSET_VERSION}`,
     navbar: [
         { href: "/", icon: HomeIcon, label: "Home" },
         {
-            href: "/curriculum_vitae.pdf",
+            href: `/curriculum_vitae.pdf?v=${ASSET_VERSION}`,
             icon: NotebookIcon,
             label: "Curriculum",
             download: true,
@@ -30,21 +32,18 @@ export const DATA = {
                 name: "GitHub",
                 url: "https://github.com/rodrigoaraujo9",
                 icon: Icons.github,
-
                 navbar: true,
             },
             LinkedIn: {
                 name: "LinkedIn",
                 url: "https://www.linkedin.com/in/rodrigoaraujo9/",
                 icon: Icons.linkedin,
-
                 navbar: true,
             },
             Email: {
                 name: "Send Email",
                 url: "mailto:contact@rodrigoaraujo.pt",
                 icon: Icons.email,
-
                 navbar: true,
             },
         },
@@ -56,7 +55,7 @@ export const DATA = {
             school: "Faculdade de Ciências da Universidade do Porto",
             href: "https://www.up.pt/portal/pt/",
             degree: "Master's Degree in Computer Science",
-            logoUrl: "/fcup.jpg ",
+            logoUrl: `/fcup.jpg?v=${ASSET_VERSION}`,
             start: "2025",
             end: "Present",
         },
@@ -64,7 +63,7 @@ export const DATA = {
             school: "Faculdade de Engenharia da Universidade do Porto",
             href: "https://www.up.pt/portal/pt/",
             degree: "Bachelor's Degree in Informatics and Computing Engineering",
-            logoUrl: "/feup.jpg ",
+            logoUrl: `/feup.jpg?v=${ASSET_VERSION}`,
             start: "2022",
             end: "2025",
         },
@@ -90,7 +89,7 @@ export const DATA = {
                     icon: <Icons.github className="size-3" />,
                 },
             ],
-            image: "/mugen.png",
+            image: `/mugen.gif?v=${ASSET_VERSION}`,
         },
         {
             title: "Game for RetroJam 2025",
@@ -112,7 +111,7 @@ export const DATA = {
                     icon: <Icons.github className="size-3" />,
                 },
             ],
-            image: "/game.png",
+            image: `/retrojam.gif?v=${ASSET_VERSION}`,
         },
         {
             title: "Gargantua – Black Hole Simulation",
@@ -129,7 +128,7 @@ export const DATA = {
                     icon: <Icons.github className="size-3" />,
                 },
             ],
-            image: "/gargantua.png",
+            image: `/gargantua.gif?v=${ASSET_VERSION}`,
         },
         {
             title: "Lambda Calculus Interpreter",
@@ -151,7 +150,7 @@ export const DATA = {
                     icon: <Icons.github className="size-3" />,
                 },
             ],
-            image: "/lambda.png",
+            image: `/lambda.png?v=${ASSET_VERSION}`,
         },
     ],
     hackathons: [
@@ -161,7 +160,7 @@ export const DATA = {
             location: "On-Site",
             description:
                 "Placed second alongside my brother Diogo with a retro-styled game developed in 48 hours with Rust and Raylib",
-            image: "ieee.png",
+            image: `/ieee.png?v=${ASSET_VERSION}`,
             links: [""],
         },
         {
@@ -170,7 +169,7 @@ export const DATA = {
             location: "Leipzig, Germany",
             description:
                 "Represented Portugal internationally at RoboCup Leipzig in autonomous robotics competition. Participating in RoboCup was a transformative childhood experience that ignited my enduring passion for technology and programming.",
-            image: "robocup.png",
+            image: `/robocup.png?v=${ASSET_VERSION}`,
         },
         {
             title: "National 1st Place – Robotics Championship (CoSpace Rescue) 2016",
@@ -178,7 +177,7 @@ export const DATA = {
             location: "Portugal",
             description:
                 "Awarded for excellence in robot programming, navigation algorithms, and autonomous systems.",
-            image: "nacional.png",
+            image: `/nacional.png?v=${ASSET_VERSION}`,
         },
         {
             title: "4th Place in Canguru Matemático Sem Fronteiras",
@@ -186,7 +185,7 @@ export const DATA = {
             location: "Portugal",
             description:
                 "Achieved 4th place nationally in the Canguru Matemático competition, demonstrating strong mathematical reasoning and problem-solving abilities from an early age.",
-            image: "canguru.png",
+            image: `/canguru.png?v=${ASSET_VERSION}`,
             links: [""],
         },
     ],

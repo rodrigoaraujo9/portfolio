@@ -1,10 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    reactStrictMode: true,
     images: {
-        domains: ["go-skill-icons.vercel.app", "skillicons.dev"]
+        domains: ["go-skill-icons.vercel.app", "skillicons.dev"],
+        localPatterns: [
+            {
+                pathname: "/**",
+            },
+        ],
     },
-    output: 'standalone',
-    // ... your other config options ...
+    output: "standalone",
 };
 
-module.exports = nextConfig;
+export default nextConfig;
