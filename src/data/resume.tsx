@@ -78,9 +78,8 @@ export const DATA = {
                 "A real-time, polyphonic terminal-based synthesizer in Rust",
             technologies: [
                 "Rust",
-                "Audio Programming",
-                "Real-time Systems",
                 "Ratatui",
+                "Real-time Systems",
             ],
             links: [
                 {
@@ -139,8 +138,7 @@ export const DATA = {
                 "A simple lambda calculus interpreter in Haskell. Parses and evaluates expressions with applicative-order evaluation to weak normal form.",
             technologies: [
                 "Haskell",
-                "Lambda Calculus",
-                "Parsing (Happy)",
+                "Happy",
                 "Cabal",
             ],
             links: [
