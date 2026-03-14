@@ -13,7 +13,7 @@ export const DATA = {
     summary:
         "I'm currently pursuing a **Master's in Computer Science**, where I focus on **distributed systems and reliable computing**. I'm fascinated by the challenges of building secure, reliable and scalable systems, as well as solving complex computational problems. Lately, I've been diving deep into **Rust**. When I'm not coding or studying, you'd be likely to find me **composing and writing music** — it's my creative outlet and passion outside of tech. I am currently **looking for research and job opportunities** and can't wait to contribute to meaningful projects!",
 
-    avatarUrl: `/avatar1.png?v=${ASSET_VERSION}`,
+    avatarUrl: `/avatar2.png?v=${ASSET_VERSION}`,
     skillsImage: `/icons.svg?v=${ASSET_VERSION}`,
     navbar: [
         { href: "/", icon: HomeIcon, label: "Home" },
@@ -92,7 +92,7 @@ export const DATA = {
             dates: "Oct 2025",
             active: true,
             description:
-                'A game developed for IEEE RetroJam 2025 using Raylib and Rust about Rebirth".',
+                "A game developed for IEEE RetroJam 2025 using Raylib and Rust about the themes of rebirth.",
             technologies: ["Rust", "Raylib"],
             links: [
                 {
@@ -114,7 +114,7 @@ export const DATA = {
             dates: "Jul 2025 - Present",
             active: true,
             description:
-                "Interactive Rust simulation of light beams bending around a Schwarzschild black hole, inspired by Interstellar's Gargantua. Features real-time physics with RK4 integration and cinematic visualization.",
+                "A real-time Rust simulation of light orbiting a Schwarzschild black hole.",
             technologies: ["Rust", "Raylib", "Physics Simulation"],
             links: [
                 {
@@ -126,17 +126,17 @@ export const DATA = {
             image: `/gargantua.gif?v=${ASSET_VERSION}`,
         },
         {
-            title: "Lambda Calculus Interpreter",
-            href: "https://github.com/rodrigoaraujo9/lambda-interpreter",
+            title: "Lambda Calculus",
+            href: "https://github.com/rodrigoaraujo9/lambda-calculus",
             dates: "Mar 2026",
             active: false,
             description:
-                "A simple lambda calculus interpreter in Haskell. Parses and evaluates expressions with applicative-order evaluation to weak normal form.",
-            technologies: ["Haskell", "Happy", "Cabal"],
+                "Implementation of Lambda Calculus interpreters and SECD based comipler with store in Haskell.",
+            technologies: ["Haskell", "Happy", "Cabal", "SECD Machine"],
             links: [
                 {
                     type: "Source",
-                    href: "https://github.com/rodrigoaraujo9/lambda-interpreter",
+                    href: "https://github.com/rodrigoaraujo9/lambda-calculus",
                     icon: <Icons.github className="size-3" />,
                 },
             ],
