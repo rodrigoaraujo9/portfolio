@@ -155,18 +155,16 @@ export default function Page() {
                             <div className="flex flex-col items-center justify-center space-y-4 text-center">
                                 <div className="space-y-2">
                                     <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                                        Certifications
+                                        Competitions
                                     </div>
                                     <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
                                         My Achievements
                                     </h2>
                                     <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                                        I believe that certifications and
-                                        extracurricular activities are great
-                                        ways to enhance my skills and
-                                        demonstrate my commitment to continuous
-                                        learning and professional
-                                        development.{" "}
+                                        I have participated in a handful of
+                                        tournaments, competitions and recently a
+                                        hackathon. I believe it's a great way to
+                                        test and hone my abilities!{" "}
                                     </p>{" "}
                                 </div>
                             </div>
