@@ -87,7 +87,7 @@ export const DATA = {
             image: `/blocktion.gif?v=${ASSET_VERSION}`,
         },
         {
-            title: "Mugen – Terminal Synth",
+            title: "Mugen",
             href: "https://github.com/rodrigoaraujo9/mugen",
             dates: "Feb 2026 - Present",
             active: true,
@@ -103,7 +103,42 @@ export const DATA = {
             image: `/mugen.gif?v=${ASSET_VERSION}`,
         },
         {
-            title: "Toy Garbage Collector",
+            title: "Gargantua",
+            href: "https://github.com/rodrigoaraujo9/gargantua",
+            dates: "Jul 2025",
+            active: true,
+            description:
+                "A real-time Rust simulation of light orbiting a Schwarzschild black hole.",
+            technologies: ["Rust", "Raylib", "Physics Simulation"],
+            links: [
+                {
+                    type: "Source",
+                    href: "https://github.com/rodrigoaraujo9/gargantua",
+                    icon: <Icons.github className="size-3" />,
+                },
+            ],
+            image: `/gargantua.gif?v=${ASSET_VERSION}`,
+        },
+        {
+            title: "synth-c",
+            href: "https://github.com/rodrigoaraujo9/synth-c",
+            dates: "Mar 2026 - May 2026",
+            active: false,
+            description:
+                "A real-time synthesizer in C with a physical controller and an android app for streaming.",
+            technologies: ["C", "Miniaudio", "Arduino"],
+            links: [
+                {
+                    type: "Source",
+                    href: "https://github.com/rodrigoaraujo9/synth-c",
+                    icon: <Icons.github className="size-3" />,
+                },
+            ],
+            image: `/synth-c.jpeg?v=${ASSET_VERSION}`,
+        },
+
+        {
+            title: "Garbage Collector",
             href: "https://github.com/rodrigoaraujo9/garbage-collector",
             dates: "May 2026 - June 2026",
             active: false,
@@ -123,40 +158,6 @@ export const DATA = {
                 },
             ],
             image: `/garbage_collector.png?v=${ASSET_VERSION}`,
-        },
-        {
-            title: "synth-c",
-            href: "https://github.com/rodrigoaraujo9/synth-c",
-            dates: "Mar 2026 - May 2026",
-            active: false,
-            description:
-                "A real-time synthesizer in C with a physical controller and an android app for streaming.",
-            technologies: ["C", "Miniaudio", "Arduino"],
-            links: [
-                {
-                    type: "Source",
-                    href: "https://github.com/rodrigoaraujo9/synth-c",
-                    icon: <Icons.github className="size-3" />,
-                },
-            ],
-            image: `/synth-c.jpeg?v=${ASSET_VERSION}`,
-        },
-        {
-            title: "Gargantua – Black Hole Simulation",
-            href: "https://github.com/rodrigoaraujo9/gargantua",
-            dates: "Jul 2025",
-            active: true,
-            description:
-                "A real-time Rust simulation of light orbiting a Schwarzschild black hole.",
-            technologies: ["Rust", "Raylib", "Physics Simulation"],
-            links: [
-                {
-                    type: "Source",
-                    href: "https://github.com/rodrigoaraujo9/gargantua",
-                    icon: <Icons.github className="size-3" />,
-                },
-            ],
-            image: `/gargantua.gif?v=${ASSET_VERSION}`,
         },
         {
             title: "Game for RetroJam 2025",
