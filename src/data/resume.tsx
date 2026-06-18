@@ -1,7 +1,7 @@
 import { Icons } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 
-const ASSET_VERSION = "20260306";
+const ASSET_VERSION = "20260618";
 
 export const DATA = {
     name: "Rodrigo Araújo",
